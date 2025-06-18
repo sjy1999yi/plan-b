@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>b-sop</title>
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto 0 auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px #0001;
+      padding: 32px 18px 24px 18px;
+      text-align: center;
+    }
+    .title {
+      font-size: 1.35rem;
+      color: #27436b;
+      font-weight: bold;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #a06800;
+      margin-bottom: 26px;
+      letter-spacing: 1px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+    .links a {
+      display: block;
+      padding: 13px 0;
+      background: #f2f9ff;
+      color: #2560a0;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 1.08rem;
+      font-weight: 500;
+      box-shadow: 0 2px 12px #2e85c415;
+      transition: background 0.15s, color 0.15s;
+    }
+    .links a:hover {
+      background: #d9ecff;
+      color: #164080;
+    }
+    @media (max-width: 520px) {
+      .container {padding:15px 4px;}
+      .title {font-size:1.05rem;}
+      .subtitle {font-size:.97rem;}
+      .links a {font-size:.97rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Welcome to B-SOP Page</div>
+    <div class="subtitle">Page to lookup:</div>
+    <div class="links">
+      <a href="bsop2025.html">MAIN SOP</a>
+      <!-- 若有其他頁，可照這格式新增 -->
+      <!-- <a href="another.html">other</a> -->
+      <!-- <a href="roadmap.html">roadmap</a> -->
+    </div>
+    <div style="color:#b2b2b2;font-size:.95rem;margin-top:30px;">&copy; 2025 B-SOP</div>
+  </div>
+</body>
+</html>

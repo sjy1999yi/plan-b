@@ -1,0 +1,221 @@
+<!--<div class="node">行前準備<br><span class="label">紀律＞思緒＞運氣</span></div>-->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>百家樂打莊法：高效盈利SOP流程圖</title>
+  <style>
+    body {
+      background: #f9f9f9;
+      font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 780px;
+      margin: 28px auto 20px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px #0002;
+      padding: 18px 10px 34px 10px;
+    }
+    .title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #27436b;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #a06800;
+      font-weight: 500;
+      margin-bottom: 16px;
+      font-size: 1.06rem;
+      letter-spacing: 1px;
+    }
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .node {
+      background: #f2f9ff;
+      border: 2px solid #2e85c4;
+      color: #144f78;
+      border-radius: 26px;
+      padding: 13px 26px 13px 45px;
+      margin: 8px 0;
+      min-width: 170px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.07rem;
+      box-shadow: 0 2px 12px #2e85c415;
+      position: relative;
+      z-index: 2;
+    }
+    .node .icon {
+      position: absolute;
+      left: 14px;
+      top: 13px;
+      font-size: 1.3em;
+    }
+    .decision {
+      background: #ffe9c2;
+      border-color: #ed9c32;
+      color: #8a550d;
+      border-radius: 18px;
+      font-weight: 600;
+      font-size: 1.01rem;
+      padding-left: 42px;
+      position: relative;
+    }
+    .decision .icon {
+      left: 14px;
+      top: 13px;
+      font-size: 1.2em;
+    }
+    .node.action { /* 行動節點 */
+      background: #e0ffe2;
+      border-color: #39b54a;
+      color: #288629;
+    }
+    .node.stop { /* 休息/暫停節點 */
+      background: #fff0f0;
+      border-color: #ef6666;
+      color: #b92727;
+    }
+    .label {
+      font-size: .92rem;
+      color: #666;
+      margin: 0 0 2px 0;
+      font-weight: 400;
+      letter-spacing: .5px;
+      display: block;
+    }
+    .arrow {
+      width: 0; height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 20px solid #bcd;
+      margin: -2px 0;
+    }
+    .branch {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+      width: 100%;
+      margin: 0;
+    }
+    .branch-arrow {
+      width: 0; height: 0;
+      border-top: 10px solid #bcd;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      margin: 0 0 0 0;
+      align-self: center;
+    }
+    .tips {
+      background: #f4f2ff;
+      border-left: 5px solid #884be8;
+      margin: 24px auto 0 auto;
+      padding: 14px 18px;
+      font-size: 1.01rem;
+      color: #473e85;
+      border-radius: 10px;
+      font-weight: 500;
+      box-shadow: 0 1px 7px #884be805;
+      max-width: 430px;
+    }
+    @media (max-width: 520px) {
+      .container {padding:5px 1px;}
+      .node, .decision {font-size:.98rem;padding:9px 6px 9px 34px;min-width:105px;}
+      .decision {font-size:.97rem;}
+      .branch {flex-direction: column;gap:6px;}
+      .title {font-size:1.1rem;}
+      .subtitle {font-size:.97rem;}
+      .tips {font-size:.97rem;padding:9px 7px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">百家樂只打莊高效盈利SOP流程圖</div>
+    <div class="subtitle">盈利 ＝ 嚴格紀律 × 動態節奏 × 風險控管</div>
+    <div class="flowchart">
+      <div class="node"><span class="icon">📝</span>行前謹記<br>
+        <span class="label">紀律＞思緒＞運氣</span>
+      </div>
+      <div class="arrow"></div>
+      <div class="node"><span class="icon">🔍</span>巡場選桌<br>
+        <span class="label">只選莊多閒5口以上桌</span>
+      </div>
+      <div class="arrow"></div>
+      <div class="node action"><span class="icon">🎯</span>開始打莊<br>
+        <span class="label">每桌最多4口</span>
+      </div>
+      <div class="arrow"></div>
+      <div class="decision"><span class="icon">💡</span>下注前判斷下三路型態</div>
+      <div class="arrow"></div>
+      <!-- 分支 -->
+      <div class="branch">
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="node action">
+            <span class="icon">🔥</span>三紅齊發<br>
+            <span class="label">路勢極穩<br>大路：長庄、長閒、單跳、雙跳</span>
+          </div>
+          <div class="branch-arrow"></div>
+          <div class="node action">
+            <span class="icon">💰</span>第一口：平注<br>贏→孖寶（加碼）<br>過關成功即收
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="node">
+            <span class="icon">🔴</span>紅路有藍<br>
+            <span class="label">主穩但有變數<br>大路：兩房一廳、庄連閒不連、庄有連閒無序</span>
+          </div>
+          <div class="branch-arrow"></div>
+          <div class="node">
+            <span class="icon">⚖️</span>平注下注，<br>不加碼
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="node stop">
+            <span class="icon">💧</span>三藍/藍多<br>
+            <span class="label">局勢混亂<br>大路：狗咬、短路、雜路</span>
+          </div>
+          <div class="branch-arrow"></div>
+          <div class="node stop">
+            <span class="icon">⏸️</span>暫停下注，<br>觀望換桌
+          </div>
+        </div>
+      </div>
+      <div class="arrow"></div>
+      <div class="node"><span class="icon">🔢</span>每桌打滿4口<br>
+        <span class="label">遇和局不計口，打夠即離</span>
+      </div>
+      <div class="arrow"></div>
+      <div class="node action">
+        <span class="icon">🔄</span>換第二桌（若有）<br>
+        <span class="label">流程重複</span>
+      </div>
+      <div class="arrow"></div>
+      <div class="node">
+        <span class="icon">📒</span>結束當日<br>
+        <span class="label">總結經驗，準備下次</span>
+      </div>
+    </div>
+    <div class="tips">
+      <b>專屬口訣：</b><br>
+      三紅齊，孖寶試；<br>
+      路亂停，四口止；<br>
+      輸贏到，紀律守；<br>
+      亂局觀，莫追補。
+    </div>
+  </div>
+</body>
+</html>
