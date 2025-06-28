@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>百家樂追莊分析表及總結建議</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+      background: #f6f8fa;
+      color: #232323;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px #0001;
+      padding: 2rem 1rem;
+    }
+    h1, h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #b22234; /* 深紅色 */
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0 1.5rem 0;
+      background: #fafdff;
+      font-size: 1rem;
+    }
+    th, td {
+      padding: 0.7em 0.3em;
+      border-bottom: 1px solid #e0e7ef;
+      text-align: center;
+    }
+    th {
+      background: #ffe1f0;
+      font-weight: bold;
+      color: #b22234;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .highlight {
+      background: #ffe1f0 !important;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1rem 0.2rem; }
+      table, thead, tbody, tr, th, td { font-size: 0.98rem; }
+      th, td { padding: 0.45em 0.2em; }
+    }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    .summary {
+      background: #ffe1f0;
+      border-left: 5px solid #b22234;
+      padding: 1rem 1.2rem 1rem 1rem;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    .credit {
+      text-align: right;
+      color: #888;
+      font-size: 0.98rem;
+      margin-top: 2rem;
+      border-top: 1px solid #eee;
+      padding-top: 0.7em;
+      line-height: 1.8;
+    }
+    .credit strong {
+      color: #b22234;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>百家樂追莊分析表</h1>
+    <h2>（80口一靴，連莊區間彙整）</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>已連莊長度</th>
+          <th>追連時機</th>
+          <th>一靴內至少出現機率</th>
+          <th>出現頻率/體感</th>
+          <th>追莊建議</th>
+          <th>理由說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>1連莊 / 第一口莊</td>
+          <td>任意莊後追下一口莊</td>
+          <td>100%</td>
+          <td>每靴多次</td>
+          <td>可娛樂性參與</td>
+          <td>每靴必遇，常見，無數學優勢，體感好，適合小注參與</td>
+        </tr>
+        <tr class="highlight">
+          <td>2連莊</td>
+          <td>莊2口後追第3口莊</td>
+          <td>99.9%</td>
+          <td>多次</td>
+          <td>可娛樂性參與</td>
+          <td>常見，適合小注娛樂，無數學優勢</td>
+        </tr>
+        <tr class="highlight">
+          <td>3連莊</td>
+          <td>莊3口後追第4口莊</td>
+          <td>99.3%</td>
+          <td>偏常見</td>
+          <td>可娛樂性參與</td>
+          <td>追連體感尚可，無優勢</td>
+        </tr>
+        <tr>
+          <td>4連莊</td>
+          <td>莊4口後追第5口莊</td>
+          <td>95%</td>
+          <td>偏常見</td>
+          <td>不太建議</td>
+          <td>出現頻率下降，追連無數學優勢</td>
+        </tr>
+        <tr>
+          <td>5連莊</td>
+          <td>莊5口後追第6口莊</td>
+          <td>79%</td>
+          <td>偏罕見</td>
+          <td>不建議</td>
+          <td>出現次數少，追連風險提升</td>
+        </tr>
+        <tr>
+          <td>6連莊</td>
+          <td>莊6口後追第7口莊</td>
+          <td>54%</td>
+          <td>罕見</td>
+          <td>不建議</td>
+          <td>罕見情境，追連屬高風險</td>
+        </tr>
+        <tr>
+          <td>7~8連莊</td>
+          <td>莊7口或8口後追第8/9口莊</td>
+          <td>約20%（28%~11%）</td>
+          <td>極罕見</td>
+          <td>不建議</td>
+          <td>出現極少，追連多半隨機，風險極高</td>
+        </tr>
+        <tr>
+          <td>9~12連莊</td>
+          <td>莊9~12口後追下一口莊</td>
+          <td>約3%（4.2%~0.5%）</td>
+          <td>幾乎不見</td>
+          <td>不建議</td>
+          <td>機率極低，追連只屬娛樂，缺乏實際意義</td>
+        </tr>
+        <tr>
+          <td>13連莊及以上</td>
+          <td>莊13口後追第14口莊或以上</td>
+          <td>&lt;0.1%</td>
+          <td>幾乎不可見</td>
+          <td>不建議</td>
+          <td>幾乎不會發生，追連毫無意義</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <h2>總結建議</h2>
+      <ul>
+        <li><strong>第一口莊、1~3連莊時追莊最常見，適合小額娛樂參與，但無數學優勢。</strong></li>
+        <li><strong>4~6連莊後追莊，出現頻率大幅下降，風險明顯提升，不建議大額參與。</strong></li>
+        <li><strong>7連莊以上再追連屬極罕見與高風險行為，建議避免。</strong></li>
+        <li><strong>所有情境下，單局莊家機率始終不變（約45.86%），連莊長短不影響下口機率，切勿誤判「易連」或「必連」。</strong></li>
+        <li><strong>百家樂連莊追連僅適合娛樂型小額參與，長期無期望優勢，應理性投注與控制預期。</strong></li>
+      </ul>
+    </div>
+
+    <div class="credit">
+      <strong>數據來源：</strong><br>
+      連莊出現機率及建議依據：<br>
+      <span style="color:#b22234;">
+        蒙地卡羅隨機模擬（每靴80口，10萬靴統計）<br>
+        ＋ 機率論遞推計算（莊家單局勝率45.86%假設）<br>
+        ＋ 百家樂遊戲規則與牌靴排列理論分析<br>
+      </span>
+    </div>
+  </div>
+</body>
+</html>
