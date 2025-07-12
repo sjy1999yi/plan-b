@@ -78,14 +78,40 @@
       font-size: 1.2em;
     }
     .node.action { /* 行動節點 */
-      background: #e0ffe2;
-      border-color: #39b54a;
-      color: #288629;
+      background: #eaffea;
+      border-color: #71d99e;
+      color: #21895c;
     }
     .node.stop { /* 休息/暫停節點 */
       background: #fff0f0;
       border-color: #ef6666;
       color: #b92727;
+    }
+    /* 新增紅色、橙色、黃色 node 樣式 */
+    .node.red {
+      background: #ffeaea;
+      border-color: #e64545;
+      color: #a82525;
+    }
+    .node.orange {
+      background: #fff3e0;
+      border-color: #ffa94d;
+      color: #b26a00;
+    }
+    .node.yellow {
+      background: #fffbe6;
+      border-color: #ffe066;
+      color: #a68600;
+    }
+    .node.green {
+      background: #e0ffe2;
+      border-color: #39b54a;
+      color: #288629;
+    }
+    .node.purple {
+      background: #f5f0ff;
+      border-color: #a077e4;
+      color: #5a368d;
     }
     .label {
       font-size: .92rem;
@@ -130,7 +156,6 @@
       box-shadow: 0 1px 7px #884be805;
       max-width: 430px;
     }
-    /* 新增機會成本最小化區塊樣式 */
     .min-loss-section {
       margin: 38px auto 0 auto;
       background: #fafdff;
@@ -208,30 +233,31 @@
     <div class="title">百家樂打莊法：高效盈利SOP流程圖</div>
     <div class="subtitle">盈利 ＝ 嚴格紀律 × 動態節奏 × 風險控管</div>
     <div class="flowchart">
-      <div class="node">
+      <div class="node red">
         <span class="icon">📝</span>行前謹記<br>
         <span class="label">紀律＞思緒＞運氣</span>
       </div>
       <div class="arrow"></div>
-      <div class="node">
+      <div class="node orange">
         <span class="icon">🔍</span>巡場得感<br>
         <span class="label">選莊＞閒五口或以上桌</span>
       </div>
       <div class="arrow"></div>
-      <div class="node action">
+      <div class="node yellow">
         <span class="icon">🚦</span>到切入點<br>
         <span class="label">極佳才直入，其餘先飛牌</span>
       </div>
       <div class="arrow"></div>
-      <div class="node action">
+      <div class="node green">
         <span class="icon">🎯</span>只壓莊家<br>
         <span class="label">整場最多四口（概率主導）</span>
       </div>
       <div class="arrow"></div>
-      <div class="decision">
-        <span class="icon">💡</span>下注前判斷下三路型態</div>
+        <div class="node action">
+          <span class="icon">💡</span>下注前判斷下三路型態
+        </div>
       <div class="arrow"></div>
-      <!-- 分支 -->
+      <!-- 分支維持原樣 -->
       <div class="branch">
         <div style="display:flex;flex-direction:column;align-items:center;">
           <div class="node action">
@@ -264,15 +290,15 @@
           </div>
         </div>
       </div>
-      <div class="arrow"></div>
-      <div class="node"><span class="icon">🔢</span>路遇四拍半止<br>
+      <div class="node purple">
+        <span class="icon">🔢</span>四半則止<br>
         <span class="label">和局不計，斷路即離</span>
       </div>
       <div class="arrow"></div>
-      <div class="node">
+      <div class="node purple">
         <span class="icon">⛳</span>結束當日<br>
         <span class="label">總結經驗，準備下次</span>
-      </div>
+      </div>      
     </div>
     <div class="tips">
       <b>專屬口訣：</b><br>
@@ -282,7 +308,7 @@
       反勢跑，勿跟補。
     </div>
 
-    <!-- 機會成本最小化區塊 -->
+    <!-- 機會成本最小化區塊維持原樣 -->
     <div class="min-loss-section">
       <div class="min-loss-title">機會成本最小化原則和方法</div>
       <table class="min-loss-table">
@@ -323,7 +349,7 @@
     <!-- End 機會成本最小化區塊 -->
   </div>
   <div class="motto">
-    只押該贏一手 🎯　財源自來不誤 🐉<br>
+    只打穩贏一口 🎯　財運自來不誤 🐉<br>
     不貪自有長勝 🏆　紀律決定勝負 🛡️
   </div>
 </body>
