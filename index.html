@@ -10,15 +10,21 @@
       font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-image: url('img/bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
     }
     .container {
       max-width: 400px;
       margin: 50px auto 0 auto;
-      background: #fff;
+      background: rgba(255,255,255,0.93);
       border-radius: 18px;
       box-shadow: 0 8px 32px #0001;
       padding: 32px 18px 24px 18px;
       text-align: center;
+      backdrop-filter: blur(2px);
     }
     .title {
       font-size: 1.35rem;
@@ -26,6 +32,17 @@
       font-weight: bold;
       margin-bottom: 18px;
       letter-spacing: 1px;
+    }
+    .title a {
+      color: #27436b;
+      text-decoration: none;
+      transition: color 0.2s;
+      border-bottom: 1.5px dotted #a5b6c8;
+      padding-bottom: 2px;
+    }
+    .title a:hover {
+      color: #1c2c47;
+      border-bottom: 1.5px solid #27436b;
     }
     .subtitle {
       font-size: 1rem;
@@ -65,11 +82,11 @@
 </head>
 <body>
   <div class="container">
-    <div class="title">Thanks for watching Plan-B.</div>
+    <div class="title">
+      <a href="img/bg.clear.png" target="_blank" rel="noopener">Thanks for watching Plan-B.</a>
+    </div>
     <div class="subtitle">To lookup:</div>
     <div class="links">
-      <!-- 若有其他頁，可照這格式新增 -->
-      <!-- <a href="roadmap.html">roadmap</a> -->
       <a href="bsop2025.html">B-SOP</a>
       <a href="dragon-b.html">DRAGON-B</a>
       <a href="dragon-p.html">DRAGON-P</a>
@@ -81,7 +98,7 @@
       <a href="quote-munger.html">QUOTE-MUNGER</a>
       <a href="quote-jim.html">QUOTE-JIM</a>
     </div>
-    <div style="color:#b2b2b2;font-size:.95rem;margin-top:30px;">純想即飛 純情即墜</div>
+    <div style="color:#b2b2b2;font-size:.95rem;margin-top:30px;">純想即飛。純情即墜。</div>
   </div>
 </body>
 </html>
