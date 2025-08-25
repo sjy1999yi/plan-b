@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>一路打莊｜最高概率打法</title>
+  <style>
+    :root {
+      --main-bg: linear-gradient(135deg, #2b046a 0%, #7911a2 80%, #e8c46c 100%);
+      --container-bg: rgba(255,255,255,0.97);
+      --accent: #e8c46c;
+      --sag-red: #a2112d;
+      --sag-deepred: #6a041d;
+      --title-shadow: 0 4px 16px #a2112d33;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+      background: var(--main-bg);
+      min-height: 100vh;
+      color: #2e151b;
+    }
+    .container {
+      max-width: 530px;
+      margin: 50px auto;
+      background: var(--container-bg);
+      border-radius: 22px;
+      box-shadow: 0 8px 32px #a2112d22, 0 2px 8px #e8c46c25;
+      padding: 38px 28px 28px 28px;
+      position: relative;
+    }
+    .sag-icon {
+      width: 68px;
+      height: 68px;
+      background: linear-gradient(135deg, #e8c46c 40%, #a2112d 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: -34px;
+      transform: translateX(-50%);
+      box-shadow: 0 2px 24px #a2112d55;
+      border: 3px solid #fff;
+    }
+    .sag-icon svg {
+      width: 38px;
+      height: 38px;
+      display: block;
+    }
+    h1 {
+      margin-top: 48px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: var(--sag-red);
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: var(--title-shadow);
+    }
+    h2 {
+      color: var(--sag-red);
+      font-size: 1.2rem;
+      margin-bottom: 19px;
+      margin-top: 32px;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+    ul, ol {
+      margin: 0 0 22px 0;
+      padding-left: 1.1em;
+    }
+    li {
+      margin-bottom: 14px;
+      font-size: 1.06rem;
+      line-height: 1.7;
+      color: #7c232c;
+    }
+    strong, b {
+      color: var(--sag-red);
+    }
+    .summary {
+      background: linear-gradient(90deg, #fff7de 60%, #e8c46c22 100%);
+      border-left: 5px solid var(--accent);
+      padding: 18px 18px 14px 18px;
+      margin: 32px 0 26px 0;
+      font-size: 1.12rem;
+      color: #a65b00;
+      font-weight: bold;
+      border-radius: 12px;
+      letter-spacing: 1px;
+      box-shadow: 0 1px 8px #e8c46c22;
+    }
+    .reminder {
+      margin: 33px 0 0 0;
+      background: linear-gradient(90deg, #fff0ed 60%, #a2112d22 100%);
+      border-left: 5px solid var(--sag-red);
+      padding: 15px 17px 13px 17px;
+      color: #8a222a;
+      font-size: 1.02rem;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 1px 8px #a2112d22;
+    }
+    @media (max-width: 600px) {
+      .container {
+        max-width: 98vw;
+        padding: 16vw 4vw 10vw 4vw;
+        margin: 16vw 0 0 0;
+      }
+      h1 { font-size: 1.22rem; margin-top: 15vw; }
+      h2 { font-size: 1.01rem; }
+      .sag-icon { width: 48px; height: 48px; top: -24px; }
+      .sag-icon svg { width: 25px; height: 25px; }
+      .summary, .reminder { font-size: .97rem; }
+      li { font-size: .97rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sag-icon" title="Sagittarius">
+      <!-- 射手座深紅SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 64 64" aria-label="Sagittarius Symbol">
+        <path d="M32 2C15.432 2 2 15.432 2 32c-.001 16.568 13.432 30 30 30c16.569 0 30.001-13.432 30-30c.001-16.568-13.432-30-30-30m16.5 29.998c0 2.504-3.909 2.504-3.909 0v-9.826l-17.098 17.1l5.89 5.889c.565.565.726 1.329.43 2.045c-.315.762-1.084 1.295-1.868 1.295c-.491 0-.949-.199-1.326-.576l-5.89-5.891l-5.938 5.935a1.765 1.765 0 0 1-.281.225a1.721 1.721 0 0 1-.557.245l-.144.021a1.116 1.116 0 0 1-.324.037l-.146-.007a1.819 1.819 0 0 1-1.655-1.203c-.337-.665-.223-1.45.328-2.052l5.953-5.963l-5.89-5.891c-.565-.565-.726-1.329-.43-2.045c.315-.762 1.084-1.295 1.868-1.295c.491 0 .949.199 1.326.576l5.89 5.891l17.099-17.1h-9.826c-1.252 0-1.908-.983-1.908-1.954s.656-1.954 1.908-1.954l14.653.012a1.956 1.956 0 0 1 1.835 1.824l.01.115v14.547" fill="#a2112d" />
+      </svg>
+    </div>
+    <h1>一路打莊｜最高概率打法</h1>
+    <h2>1. <strong>只壓莊家（Banker）</strong></h2>
+    <ul>
+      <li>莊家勝率高於閒家，賭場抽水後仍然優於其他下注選擇。</li>
+      <li>長期下來，單壓莊家是所有基礎下注法中賭場優勢最低（約1.06%）的選擇。</li>
+    </ul>
+    <h2>2. <strong>避開和局（Tie）與對子等高賠率選項</strong></h2>
+    <ul>
+      <li>這些選項賭場優勢極高，長期下注容易大輸。</li>
+    </ul>
+    <h2>3. <strong>嚴格資金控管與止盈止損</strong></h2>
+    <ul>
+      <li>冷靜設停損、停利點，避免輸光本金，見好就收。</li>
+    </ul>
+    <h2>4. <strong>不迷信牌路，不盲從用追龍砍龍等圖型打法，負追勝進等纜法</strong></h2>
+    <ul>
+      <li>這些策略無法改變賭場概率優勢，只會增加風險。盲信牌路不僅無益，還可能適得其反。</li>
+    </ul>
+    <h2>5. <strong>莊家勝率因大幅偏離五五開＆牌勢明顯懸殊時，可小注搏大利</strong></h2>
+    <ul>
+      <li>此時切入下行風險極低，上行空間大，能用最小的風險換取最高的獲利潛力。</li>
+    </ul>
+    <div class="summary">
+      百家樂贏面最高的打法，就是<strong>長期只壓莊家</strong>，<br>
+      不碰高賠率選項，不要迷信牌路<br>
+      嚴格控管資金，並將其視為投機。
+    </div>
+    <div class="summary">
+      百家樂任何圖型打法／纜法<strong>長期期望值仍為負</strong>。<br>
+      「最高贏面」只能讓你虧得最少。<br>
+      理性釣魚、投機為主，才是最好的策略！
+    </div>
+  </div>
+</body>
+</html>
