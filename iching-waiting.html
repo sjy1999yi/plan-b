@@ -123,6 +123,53 @@
   </header>
   <div class="container">
 
+    <!-- 插入AI畫的需卦意景圖 -->
+    <div class="svg-wrap">
+      <svg viewBox="0 0 400 300" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <!-- ...SVG內容同前釣魚版... -->
+        <!-- 天空 -->
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f7f6e7"/>
+            <stop offset="80%" stop-color="#aee2fa"/>
+          </linearGradient>
+          <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#aee2fa"/>
+            <stop offset="100%" stop-color="#4ea4d3"/>
+          </linearGradient>
+          <radialGradient id="sun" cx="50%" cy="70%" r="50%">
+            <stop offset="0%" stop-color="#fffbe3"/>
+            <stop offset="70%" stop-color="#ffe066"/>
+            <stop offset="100%" stop-color="#ffe066" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect x="0" y="0" width="400" height="300" fill="url(#sky)" />
+        <!-- 太陽 -->
+        <circle cx="200" cy="182" r="35" fill="url(#sun)" />
+        <circle cx="200" cy="182" r="18" fill="#ffe066" opacity="0.8" />
+        <!-- 地平線 -->
+        <rect x="0" y="190" width="400" height="12" fill="#e6c97a"/>
+        <!-- 水面 -->
+        <rect x="0" y="202" width="400" height="98" fill="url(#water)" />
+        <!-- 水的波光 -->
+        <ellipse cx="110" cy="210" rx="32" ry="5" fill="#fff" opacity="0.25"/>
+        <ellipse cx="210" cy="225" rx="50" ry="7" fill="#fff" opacity="0.10"/>
+        <ellipse cx="300" cy="240" rx="35" ry="5" fill="#fff" opacity="0.17"/>
+        <ellipse cx="170" cy="255" rx="22" ry="3.5" fill="#fff" opacity="0.09"/>
+        <!-- 遠山 -->
+        <path d="M0 200 Q60 170 110 200 Q180 185 220 200 Q270 178 350 200 Q380 190 400 205 V220 H0Z" fill="#bbd1e6" opacity="0.4"/>
+        <!-- 草叢 -->
+        <ellipse cx="45" cy="210" rx="10" ry="3.5" fill="#b6e3a2" opacity="0.8"/>
+        <ellipse cx="80" cy="208" rx="7" ry="2.2" fill="#b6e3a2" opacity="0.8"/>
+        <!-- 卦名 -->
+        <text x="198" y="35" text-anchor="middle" font-size="26" fill="#293462" font-weight="bold" letter-spacing="6">需卦</text>
+        <!-- 小說明 -->
+        <text x="200" y="60" text-anchor="middle" font-size="14.5" fill="#337ca0" opacity="0.8">
+          水天需 · 靜候時機
+        </text>
+      </svg>
+    </div>
+    <!-- 需卦意景圖結束 -->
     <h2>需卦的原意與象徵</h2>
     <ul>
       <li><b>卦象：</b>坎上乾下（水天需）——天在下、水在上，陰陽未交，有「等待、醞釀、蓄勢」之象。</li>
@@ -137,6 +184,9 @@
       </li>
       <li><b>象徵重點：</b>等待時機，醞釀能量，審慎行動。</li>
     </ul>
+
+
+
 
     <h2>對於投資百家樂的指示</h2>
     <ul>
